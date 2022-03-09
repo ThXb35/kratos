@@ -4682,7 +4682,7 @@ func (a *V0alpha2ApiService) InitializeSelfServiceSamlFlowForBrowsersExecute(r V
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
 
-	localVarPath := localBasePath + "/self-service/methods/saml/browser"
+	localVarPath := localBasePath + "/self-service/methods/saml/auth"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

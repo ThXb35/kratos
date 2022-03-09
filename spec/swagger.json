@@ -1127,7 +1127,7 @@
         }
       }
     },
-    "/self-service/methods/saml/browser": {
+    "/self-service/methods/saml/auth": {
       "get": {
         "description": "This endpoint initiates a registration flow for API clients such as mobile devices, smart TVs, and so on.\n\nIf a valid provided session cookie or session token is provided, a 400 Bad Request error\nwill be returned unless the URL query parameter `?refresh=true` is set.\n\nTo fetch an existing registration flow call `/self-service/registration/flows?flow=\u003cflow_id\u003e`.\n\nYou MUST NOT use this endpoint in client-side (Single Page Apps, ReactJS, AngularJS) nor server-side (Java Server\nPages, NodeJS, PHP, Golang, ...) browser applications. Using this endpoint in these applications will make\nyou vulnerable to a variety of CSRF attacks.\n\nIn the case of an error, the `error.id` of the JSON response body can be one of:\n\n`session_already_available`: The user is already signed in.\n`security_csrf_violation`: Unable to fetch the flow because a CSRF violation occurred.\n\nThis endpoint MUST ONLY be used in scenarios such as native mobile apps (React Native, Objective C, Swift, Java, ...).\n\nMore information can be found at [Ory Kratos User Login and User Registration Documentation](https://www.ory.sh/docs/next/kratos/self-service/flows/user-login-user-registration).",
         "schemes": [

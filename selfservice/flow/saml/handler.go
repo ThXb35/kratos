@@ -32,7 +32,7 @@ import (
 
 const (
 	RouteSamlMetadata  = "/self-service/methods/saml/metadata"
-	RouteSamlLoginInit = "/self-service/methods/saml/browser" //Redirect to the IDP
+	RouteSamlLoginInit = "/self-service/methods/saml/auth" //Redirect to the IDP
 	RouteSamlAcs       = "/self-service/methods/saml/acs"
 )
 
@@ -108,7 +108,7 @@ func (h *Handler) submitMetadata(w http.ResponseWriter, r *http.Request, ps http
 	samlMiddleware.ServeMetadata(w, r)
 }
 
-// swagger:route GET /self-service/methods/saml/browser v0alpha2 initializeSelfServiceSamlFlowForBrowsers
+// swagger:route GET /self-service/methods/saml/auth v0alpha2 initializeSelfServiceSamlFlowForBrowsers
 //
 // Initialize Authentication Flow for SAML (Either the login or the register)
 //

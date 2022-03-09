@@ -1133,7 +1133,7 @@ paths:
       summary: Create a Logout URL for Browsers
       tags:
       - v0alpha2
-  /self-service/methods/saml/browser:
+  /self-service/methods/saml/auth:
     get:
       description: |-
         This endpoint initiates a registration flow for API clients such as mobile devices, smart TVs, and so on.

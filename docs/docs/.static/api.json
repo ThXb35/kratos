@@ -2627,7 +2627,7 @@
         "tags": ["v0alpha2"]
       }
     },
-    "/self-service/saml/browser": {
+    "/self-service/saml/auth": {
       "get": {
         "description": "This endpoint is to redirect the user to the idp auth flow",
         "operationId": "getUrlIdp",

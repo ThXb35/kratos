@@ -45,7 +45,7 @@ const (
 	RouteBase = "/self-service/methods/saml"
 
 	RouteAcs  = RouteBase + "/acs"
-	RouteAuth = RouteBase + "/browser"
+	RouteAuth = RouteBase + "/auth"
 )
 
 var _ identity.ActiveCredentialsCounter = new(Strategy)
